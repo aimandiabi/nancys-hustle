@@ -1,0 +1,50 @@
+:root {
+  /* PALETTE */
+  --color-bg: #0c0c0c;
+  --color-bg-warm: #141210;
+  --color-surface: #1a1816;
+  --color-surface-2: #242220;
+  --color-border: rgba(255,255,255,0.06);
+  --color-text: #f5f2ed;
+  --color-text-2: #9a958d;
+  --color-text-3: #5a564f;
+  --color-accent: #c9a85c;
+  --color-accent-2: #c96f53;
+  --color-white: #ffffff;
+
+  /* TYPOGRAPHY */
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --fs-hero: clamp(4rem, 8vw, 9rem);
+  --fs-h1: clamp(3rem, 5vw, 5.5rem);
+  --fs-h2: clamp(2rem, 3.5vw, 3.5rem);
+  --fs-h3: clamp(1.5rem, 2vw, 2rem);
+  --fs-body: 1.125rem;
+  --fs-small: 0.875rem;
+  --fs-caption: 0.75rem;
+  --lh-tight: 1.05;
+  --lh-body: 1.6;
+  --ls-wide: 0.2em;
+  --ls-normal: 0.01em;
+
+  /* SPACING — 8px grid */
+  --space-1: 0.5rem; --space-2: 1rem; --space-3: 1.5rem;
+  --space-4: 2rem; --space-5: 2.5rem; --space-6: 3rem;
+  --space-8: 4rem; --space-10: 5rem; --space-12: 6rem;
+  --space-16: 8rem; --space-24: 12rem;
+
+  /* MOTION */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --duration-fast: 0.3s;
+  --duration-medium: 0.6s;
+  --duration-slow: 1.2s;
+
+  /* LAYOUT */
+  --max-width: 1440px;
+  --gutter: 2rem;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}

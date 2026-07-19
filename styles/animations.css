@@ -1,0 +1,91 @@
+/* Initial states — elements start hidden, GSAP animates them in */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(60px);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.reveal-fade {
+  opacity: 0;
+}
+
+/* Clip reveal for images */
+.clip-reveal {
+  clip-path: inset(100% 0 0 0);
+}
+
+/* Text split reveal - per character */
+.split-char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+/* Stagger children */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Parallax base */
+[data-speed] {
+  will-change: transform;
+}
+
+/* Smooth transitions for interactive elements */
+.hover-lift {
+  transition: transform var(--duration-fast) var(--ease-out-expo),
+              box-shadow var(--duration-fast) var(--ease-out-expo);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Line draw animation for brass rules */
+.line-draw {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+/* Counter animation helper */
+.counter-active {
+  /* Applied by JS when counting */
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up, .reveal-left, .reveal-right, .reveal-scale, .reveal-fade {
+    opacity: 1;
+    transform: none;
+  }
+  .clip-reveal {
+    clip-path: none;
+  }
+  .split-char {
+    opacity: 1;
+    transform: none;
+  }
+  .stagger-children > * {
+    opacity: 1;
+    transform: none;
+  }
+  [data-speed] {
+    will-change: auto;
+  }
+}
